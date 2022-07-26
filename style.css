@@ -1,8 +1,0 @@
-img {
-    width: 33vw;
-    height: 40vh;
-}
-.randomCatsContainer, .favoriteCatsContainer {
-    display: flex;
-    gap: 5px;
-}
