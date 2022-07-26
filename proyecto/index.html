@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Cats App</title>
+    <style>
+        img {
+            width: 33vw;
+            height: 40vh;
+        }
+        .randomCatsContainer, .favoriteCatsContainer {
+            display: flex;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cats App</h1>
+    <button class="refreshBtn">Refresh</button>
+
+    <span id="error"></span>
+
+    <section id="randomCats">
+        <h2>Random Cats</h2>
+
+        <div class="randomCatsContainer">
+            <article>
+                <img id="img1" alt="Foto gatito aleatorio">
+                <button id="btn1">Save cat in favorites</button>
+            </article>
+
+            <article>
+                <img id="img2" alt="Foto gatito aleatorio">
+                <button id="btn2">Save cat in favorites</button>
+            </article>
+
+            <article>
+                <img id="img3" alt="Foto gatito aleatorio">
+                <button id="btn3">Save cat in favorites</button>
+            </article>
+        </div>
+    </section>
+
+    <section id="favoriteCats">
+        <h2>Favorite Cats</h2>
+        <div class="favoriteCatsContainer">
+
+        </div>
+    </section>
+
+    <section id="uploadingCat">
+        <h2>Upload a picture of a cat</h2>
+
+        <form id="uploadForm">
+            <input type="file" name="file" id="file">
+            <button type="button" onclick="uploadCatPhoto()">Submit Cat Photo</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
